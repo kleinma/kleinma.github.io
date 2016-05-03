@@ -1,5 +1,5 @@
-<div class="sidebar">
-    <div class="container">
+<div class="container">
+    <header class="three columns">
         <img src="{{ site.baseurl }}static/img/profile.png" class="me">
         <h1>{{ site.name }}</h1>
 	{% if page.title == "R" %}
@@ -24,5 +24,16 @@
             <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
             <a href="https://facebook.com/{{ site.facebook }}"><i class="fa fa-facebook"></i> Facebook</a>
         </p>
+    </header>
+
+    <div class="thirteen columns clearfix">
+      
+      {{ content }}
+      
+      <footer class="thirteen columns">
+	<p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
+	  <a href="https://www.github.com/biomadeira/vitae">vitae</a> with ♥</p>
+      </footer>
     </div>
+
 </div>
