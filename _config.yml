@@ -14,7 +14,8 @@ author: Matthew Klein
 # biomadeira.github.io - all contents run on /vitae/
 # for a normal use at the base of the server change it to "/"
 baseurl: /
-title: Matthew Klein Resume
+title: Matthew Klein
+tagline: Welcome!
 name: Matthew Klein
 email: gmattklein@gmail.com
 email_full: mailto:gmattklein@gmail.com
