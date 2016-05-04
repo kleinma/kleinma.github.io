@@ -19,7 +19,7 @@
             </p>
         {% else %}
 
-            <a href="{{ site.baseurl }}">Home</a>
+            <h2> <a href="{{ site.baseurl }}">Home</a> </h2> <br/>
 
             {% comment %}
                 The code below dynamically generates a sidebar nav of pages with `layout: page` in the front-matter.
@@ -29,7 +29,7 @@
             {% for node in pages_list %}
                 {% if node.title != null %}
                     {% if node.layout == "page" %}
-                        <a href="{{ node.url }}">{{ node.title }}</a>
+                        <h2> <a href="{{ node.url }}">{{ node.title }}</a> </h2><br/>
                     {% endif %}
                 {% endif %}
             {% endfor %}
