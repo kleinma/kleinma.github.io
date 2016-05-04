@@ -2,23 +2,39 @@
     <header class="three columns">
         <img src="{{ site.baseurl }}static/img/profile.png" class="me">
         <h1>{{ site.name }}</h1>
-	{% if page.title == "R" %}
-	{% else %}
-	{% endif %}
-        <p>
-            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
-        </p>
-        <address>
-            <a href="{{ site.google_maps }}">
-                {{ site.address }}<br/>
-                {{ site.city }}, {{site.state}}<br/>
-                {{ site.postcode }}<br/>
-                {{ site.country }}
-            </a>
-        </address>
-        <p>
-            <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
-        </p>
+        {% if page.title == "CV" %}
+            <p>
+                <a href="{{ site.tel_full }}">{{ site.tel }}</a>
+            </p>
+            <address>
+                <a href="{{ site.google_maps }}">
+                    {{ site.address }}<br/>
+                    {{ site.city }}, {{site.state}}<br/>
+                    {{ site.postcode }}<br/>
+                    {{ site.country }}
+                </a>
+            </address>
+            <p>
+                <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
+            </p>
+        {% else %}
+
+            <a href="{{ site.baseurl }}">Home</a>
+
+            {% comment %}
+                The code below dynamically generates a sidebar nav of pages with `layout: page` in the front-matter.
+            {% endcomment %} 
+
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+                {% if node.title != null %}
+                    {% if node.layout == "page" %}
+                        <a href="{{ node.url }}">{{ node.title }}</a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
+        {% endif %}
         <p>
             <a href="{{ site.email_full }}"><i class="fa fa-envelope"></i></a> /
             <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a> /
