@@ -11,8 +11,6 @@ url: matthewkle.in
 author: Matthew Klein
 
 # edit this section with your information
-# biomadeira.github.io - all contents run on /vitae/
-# for a normal use at the base of the server change it to "/"
 baseurl: /
 title: Matthew Klein
 tagline: Welcome!
@@ -23,6 +21,7 @@ website: matthewkle.in
 website_full: http://matthewkle.in
 github: kleinma
 facebook: kleinma
+linkedin: kleinma
 tel: +1 330 447 6876
 tel_full: tel:+13304476876
 google_maps: 'https://www.google.com/maps/place/2169+Oakdale+Rd,+Cleveland+Heights,+OH+44118/'
