@@ -31,7 +31,7 @@ postcode: 44118
 city: Cleveland Hts
 state: OH
 country: United States
-google_analytics: UA-69300817-1
+google_analytics: UA-77309106-1
 
 # needed for travis-ci build
 exclude: [vendor]
