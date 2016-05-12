@@ -9,6 +9,4 @@ title: CV
 
 {% include skills.html %}
 
-{% include initiatives.html %}
-
 {% include interests.html %}
