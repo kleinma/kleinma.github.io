@@ -2,10 +2,11 @@
 layout: cv
 title: CV
 ---
-
-{% include employment.html %}
+{% include research.html %}
 
 {% include education.html %}
+
+{% include employment.html %}
 
 {% include skills.html %}
 
